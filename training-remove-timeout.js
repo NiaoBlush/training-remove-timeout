@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         跳过培训超时对话框
-// @version      0.1
+// @version      0.2
 // @description  培训对话框会影响学习的连贯性，影响学习效率
 // @author       You
 // @match        http://tp.1safety.cc/student
@@ -8,7 +8,6 @@
 // @match        http://tp.1safety.cc/student/train
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=1safety.cc
 // @require      https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js
-// @version      0.2
 // @grant        none
 // ==/UserScript==
 
