@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         跳过培训超时对话框
-// @version      0.3
+// @version      0.4
 // @description  培训对话框会影响学习的连贯性，影响学习效率，影响学习质量
-// @author       You
-// @match        http://tp.1safety.cc/student
-// @match        http://tp.1safety.cc/student/study/*
-// @match        http://tp.1safety.cc/student/train
+// @author       NiaoBlush
+// @match        tp.1safety.cc/student
+// @match        tp.1safety.cc/student/study/*
+// @match        tp.1safety.cc/student/train
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=1safety.cc
 // @require      https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js
 // @grant        none
@@ -34,5 +34,9 @@
                 }
             })
         }
+    })
+
+    $(".bossien-app-logo__title").click(function () {
+        navigator.clipboard.writeText($(".question-title span:last-child").text());
     })
 })();
