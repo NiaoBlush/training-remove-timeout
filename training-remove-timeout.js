@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         跳过培训超时对话框
-// @version      0.4
+// @version      0.5
 // @description  培训对话框会影响学习的连贯性，影响学习效率，影响学习质量
 // @author       NiaoBlush
 // @match        tp.1safety.cc/student
