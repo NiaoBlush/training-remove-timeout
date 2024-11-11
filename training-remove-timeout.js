@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         跳过培训超时对话框
-// @version      0.6
+// @version      0.6.1
 // @description  培训对话框会影响学习的连贯性，影响学习效率，影响学习质量
 // @author       NiaoBlush
 // @match        tp.1safety.cc/student
 // @match        tp.1safety.cc/student/study/*
 // @match        tp.1safety.cc/student/train
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=1safety.cc
-// @require      https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js
+// @require      https://libs.baidu.com/jquery/2.0.3/jquery.min.js
 // @grant        GM_addStyle
 // @namespace https://greasyfork.org/users/440597
 // @downloadURL https://update.greasyfork.org/scripts/455517/%E8%B7%B3%E8%BF%87%E5%9F%B9%E8%AE%AD%E8%B6%85%E6%97%B6%E5%AF%B9%E8%AF%9D%E6%A1%86.user.js
