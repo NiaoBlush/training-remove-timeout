@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         跳过培训超时对话框
-// @version      0.7.2
+// @version      0.7.3
 // @description  培训对话框会影响学习的连贯性，影响学习效率，影响学习质量
 // @author       NiaoBlush
 // @match        tp.1safety.cc/student
@@ -82,5 +82,31 @@
 
     // 开始监测 body 的变化
     observer.observe(document.body, {childList: true, subtree: true});
+
+    let player = null;
+    setInterval(function () {
+        if (typeof videojs === 'undefined') {
+            return;
+        }
+
+        try {
+            player = videojs('preview_html5_api');
+            console.log('__ player', player);
+
+            if (player) {
+                if (player.paused()) {
+                    console.log('播放器处于暂停状态');
+                    player.play();
+                }
+            }
+
+        } catch (error) {
+            console.error('发生错误:', error.message);
+            console.log('__ 清除实例');
+            player = null;
+        }
+
+    }, 10000);
+
 
 })();
